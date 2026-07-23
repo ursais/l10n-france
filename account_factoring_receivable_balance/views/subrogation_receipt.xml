@@ -214,12 +214,14 @@
         <field name="name">Subrogation Receipts</field>
         <field name="res_model">subrogation.receipt</field>
         <field name="view_mode">tree,form</field>
+        <field name="domain">[('company_id', 'in', company_ids)]</field>
     </record>
 
     <record id="subrogation_receipt_action_redirection" model="ir.actions.act_window">
         <field name="name">Created Subrogation Receipts</field>
         <field name="res_model">subrogation.receipt</field>
         <field name="view_mode">tree,form</field>
+        <field name="domain">[('company_id', 'in', company_ids)]</field>
     </record>
 
 
